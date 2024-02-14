@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('assets/bg2.jpg');
+  background-image: url('asset/bg2.jpg');
   background-size: 1000px 600px; /* Resize image to 1000px width and 300px height */
   background-repeat: no-repeat; /* Prevent image from repeating */
   background-position: center center; /* Center the background image */
