@@ -1,11 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@400;600;900&display=swap');
+
 body {
-    padding-top: 56px; /* Adjusted for fixed navbar height */
-  }
-  
-  .navbar {
-    background-color: #4CAF50; /* Change the background color */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
-  }
+  padding-top: 56px; /* Adjusted for fixed navbar height */
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Make the body full height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.bg {
+  position: relative; /* Position relative to allow z-index */
+  z-index: 1; /* Set z-index higher than navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('assets/bg2.jpg');
+  background-size: 1000px 600px; /* Resize image to 1000px width and 300px height */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-position: center center; /* Center the background image */
+  width: 100%; /* Make the div take full width */
+  height: 100%; /* Make the div take full height */
+}
+
+
+.navbar {
+  background-color: rgb(0, 128, 128) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  position: fixed; /* Fix the navbar at the top */
+  width: 100%; /* Make the navbar take full width */
+  z-index: 2; /* Set a higher z-index than the background */
+}
   
   .navbar-brand {
     color: #fff !important; /* Change brand text color */
@@ -37,7 +63,13 @@ body {
   }
   
   .navbar-nav .nav-link:hover {
-    color: #ffd700 !important; /* Change link text color on hover */
+    color: #ff7322 !important; /* Change link text color on hover */
+    
+  }
+
+  .nav-item{
+    font-weight: 700;
+    font-family: "Manrope", sans-serif;
   }
   
   /* Additional Styles for Login/Sign Up */
@@ -45,13 +77,3 @@ body {
     color: #fff; /* Change text color for login/sign up */
     margin-right: 15px; /* Add spacing between login/sign up and other items */
   }
-  
-  /* Styles for Doctor Carousel */
-  .doctor-carousel {
-    margin-top: 20px; /* Add spacing between navbar and carousel */
-  }
-  
-  .carousel-inner {
-    border-radius: 10px; /* Add border radius to carousel */
-  }
-  

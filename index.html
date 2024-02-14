@@ -1,62 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="data.css">
-    <title>DocAI</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Health App</title>
+  <!-- Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  
+    
+    
 </head>
-
 <body>
-    <header>
-        <h1 class="heading">DOC AI</h1>
-        <h3 class="title">Sliding Login & Registration Form</h3>
-    </header>
 
-    <!-- container div -->
-    <div class="container">
+<!-- Bootstrap Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">DOC AI</a>
+  
+  <!-- Responsive Navbar Toggle Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <!-- Navbar Components -->
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Appointments</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Tests History</a>
+      </li>
+    </ul>
+    
+    <!-- Login/Sign Up Option -->
+    <span class="navbar-text border p-2 m-3">
+      <a href="data.html">Login/Sign Up</a>
+    </span>
+  </div>
+</nav>
 
-        <!-- upper button section to select
-            the login or signup form -->
-        <div class="slider"></div>
-        <div class="btn">
-            <button class="login">Login</button>
-            <button class="signup">Signup</button>
-        </div>
+<div class="bg">
+  <!-- <h1 class="heading">Your Wellness, Our Priority.</h1> -->
 
-        <!-- Form section that contains the
-            login and the signup form -->
-        <div class="form-section">
+</div>
 
-            <!-- login form -->
-            <div class="login-box">
-                <input type="email" class="email ele" placeholder="youremail@email.com">
-                <input type="password" class="password ele" placeholder="password">
-                <button class="clkbtn">Login</button>
-            </div>
 
-            <!-- signup form -->
-            <div class="signup-box">
-                <input type="text" class="name ele" placeholder="First Name">
-                <input type="text" class="name ele" placeholder="Last Name">
-                <input type="number" class="age ele" placeholder="Age">
-                <select class="sex ele">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
-                <input type="text" class="height ele" placeholder="Height">
-                <input type="text" class="weight ele" placeholder="Weight">
-                <input type="text" class="blood-group ele" placeholder="Blood Group">
-                <input type="text" class="address ele" placeholder="Address">
-                <input type="text" class="phone ele" placeholder="Phone No">
-                <input type="email" class="email ele" placeholder="youremail@email.com">
-                <input type="password" class="password ele" placeholder="Password">
-                <input type="password" class="password ele" placeholder="Confirm password">
-                <button class="submit-btn clkbtn">Submit</button>
-            </div>
-        </div>
-    </div>
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script src="data.js"></script>
 </body>
 </html>
