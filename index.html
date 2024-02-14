@@ -3,14 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Health Tech Test Recommendation</title>
+  <title>Your Health App</title>
+  <!-- Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      padding-top: 56px; /* Adjusted for fixed navbar height */
+    }
+
+    .navbar {
+      background-color: #4CAF50; /* Change the background color */
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    }
+
+    .navbar-brand {
+      color: #fff !important; /* Change brand text color */
+      font-weight: bold;
+    }
+
+    .navbar-nav .nav-link {
+      color: #fff !important; /* Change link text color */
+    }
+
+    .navbar-toggler-icon {
+      background-color: #fff; /* Change toggle button color */
+    }
+
+    .navbar-toggler {
+      border: none; /* Remove border from the toggle button */
+    }
+
+    .navbar-toggler:focus, .navbar-toggler:active {
+      outline: none; /* Remove focus outline from the toggle button */
+    }
+
+    .navbar-nav .nav-item {
+      margin-right: 15px; /* Add spacing between nav items */
+    }
+
+    .navbar-nav .nav-item:last-child {
+      margin-right: 0; /* Remove right margin from the last nav item */
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #ffd700 !important; /* Change link text color on hover */
+    }
+
+    /* Additional Styles for Login/Sign Up and Search Bar */
+    .navbar-text {
+      color: #fff; /* Change text color for login/sign up */
+      margin-right: 15px; /* Add spacing between login/sign up and other items */
+    }
+
+    .search-bar {
+      margin-right: 15px; /* Add spacing between search bar and other items */
+    }
+  </style>
 </head>
 <body>
-  <div id="app">
-    <h1>Health Tech Test Recommendation</h1>
-    <!-- Add your components here -->
+
+<!-- Bootstrap Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Your Health App</a>
+  
+  <!-- Responsive Navbar Toggle Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <!-- Navbar Components -->
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Appointments</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Tests History</a>
+      </li>
+    </ul>
+    
+    <!-- Login/Sign Up Option -->
+    <span class="navbar-text">
+      <a href="#">Login/Sign Up</a>
+    </span>
+    
+    <!-- Search Bar -->
+    <form class="form-inline my-2 my-lg-0 search-bar">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+    </form>
   </div>
-  <script src="app.js"></script>
+</nav>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
