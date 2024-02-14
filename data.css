@@ -43,7 +43,7 @@ header {
     background-color: white;
     box-shadow: 8px 8px 20px rgb(128, 128, 128);
     position: relative;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .btn {
