@@ -1,0 +1,57 @@
+body {
+    padding-top: 56px; /* Adjusted for fixed navbar height */
+  }
+  
+  .navbar {
+    background-color: #4CAF50; /* Change the background color */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+  
+  .navbar-brand {
+    color: #fff !important; /* Change brand text color */
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #fff !important; /* Change link text color */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #fff; /* Change toggle button color */
+  }
+  
+  .navbar-toggler {
+    border: none; /* Remove border from the toggle button */
+  }
+  
+  .navbar-toggler:focus, .navbar-toggler:active {
+    outline: none; /* Remove focus outline from the toggle button */
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 15px; /* Add spacing between nav items */
+  }
+  
+  .navbar-nav .nav-item:last-child {
+    margin-right: 0; /* Remove right margin from the last nav item */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ffd700 !important; /* Change link text color on hover */
+  }
+  
+  /* Additional Styles for Login/Sign Up */
+  .navbar-text {
+    color: #fff; /* Change text color for login/sign up */
+    margin-right: 15px; /* Add spacing between login/sign up and other items */
+  }
+  
+  /* Styles for Doctor Carousel */
+  .doctor-carousel {
+    margin-top: 20px; /* Add spacing between navbar and carousel */
+  }
+  
+  .carousel-inner {
+    border-radius: 10px; /* Add border radius to carousel */
+  }
+  
